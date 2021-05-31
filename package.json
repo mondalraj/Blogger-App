@@ -1,0 +1,27 @@
+{
+  "name": "blogger-app",
+  "version": "1.0.0",
+  "description": "A Blogging web app performing various CRUD Operations.",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mondalraj/Blogger-App.git"
+  },
+  "author": "Rajib Mondal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mondalraj/Blogger-App/issues"
+  },
+  "homepage": "https://github.com/mondalraj/Blogger-App#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
