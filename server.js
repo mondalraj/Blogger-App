@@ -7,7 +7,19 @@ app.set('view engine', 'ejs');
 app.use('/articles', articleRouter);
 
 app.get('/', (req, res) => {
-    res.render('index', {title: "Home Page"});
+    const articles = [
+        {
+            title: "Dummy Blog 1",
+            createdAt: new Date(),
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi."
+        },
+        {
+            title: "Dummy Blog 2",
+            createdAt: new Date(),
+            description: "Lorem ipsum dolor sit amet, cdnmvbdh ndvjds dsvmdng elit."
+        }
+    ]
+    res.render('index', {articles: articles, title: "Home"});
 });
 
 app.listen(3000, () => {
