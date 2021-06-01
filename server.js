@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
             description: "Lorem ipsum dolor sit amet, cdnmvbdh ndvjds dsvmdng elit."
         }
     ]
-    res.render('index', {articles: articles, title: "Home"});
+    res.render('articles/index', {articles: articles, title: "Home"});
 });
 
 app.listen(3000, () => {
